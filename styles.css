@@ -13,14 +13,16 @@ body{
  }
  .recipe,
  .intro {
+    display:inline-block
+}
+
+.recipe {
     font-weight: bolder;
-    display:inline-block;
     border: 1px solid rgb(7, 0, 8);
     background-color: antiquewhite;
     padding: 5px 10px;
     margin: 10px 4%;
-    
- }
+}
  .specific-recipe {
     text-align: center;
     width: 60%;
