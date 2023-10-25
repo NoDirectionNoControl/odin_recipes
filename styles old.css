@@ -1,0 +1,37 @@
+body {
+    font-family: Calibri, Verdana, sans-serif;
+    color: black;
+    background-color: rgb(240, 240, 235);
+    font-size: 18px;
+    padding-left: 10px;
+}
+ul li {
+    list-style-type:circle;
+    margin-bottom: 10px;
+}
+ol li{
+    list-style: lower-latin;
+    margin-bottom: 10px;
+}
+.ingredients {
+    font-size: 20px;
+    
+}
+
+ .instructions p {
+    padding-left: 20px;
+    color: rgb(73, 71, 71);
+    font-weight: bold;
+ }
+
+ img {
+    height: 300px;
+    width: auto;
+ }
+ .recipe{
+    display: inline;
+    border: 2px  solid rgb(6, 30, 245);
+    background-color: rgb(203, 69, 236);
+    color: white;
+    padding: 8px 10px;  
+ }
