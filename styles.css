@@ -1,68 +1,109 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(255, 255, 255);
- }
- body.general{
-    width: 30%;
- }
- .recipe-list{
-    display:block;
-    text-align: center;
-    width: auto;
-    padding: 0px;
-    border: 2px solid black;
-    background-color: antiquewhite;
-
- }
- img{
-    border: 3px dashed black;
- }
- .recipe,
- .intro {
-    display:inline-block
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
 }
-
+.master {
+    /* border: 3px solid rgb(243, 0, 0) ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.header {
+    /* border: 3px solid black ; */
+    background-color: #005b4d;
+    color: rgb(252, 252, 253);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+}
+.intro{
+    /* border: 3px solid black ; */
+    width: 50%;
+    text-align: center;
+    background-color: rgb(192, 162, 88);
+    color: white;
+    justify-content: center;
+    padding: 10px;
+}
+.recipe-list-container {
+    /* border: 3px solid black ; */
+    width: 50%;
+    text-align: center;
+    background-color: rgb(29, 138, 153);
+    color: rgb(237, 242, 244);
+    justify-content: center;
+    padding: 10px;
+     
+}
+.recipe-grid { 
+    display:flex;
+    justify-content: space-around;
+}
 .recipe {
-    font-weight: bolder;
-    border: 1px solid rgb(7, 0, 8);
-    background-color: antiquewhite;
-    padding: 5px 10px;
-    margin: 10px 4%;
-}
- .specific-recipe {
+    /* border: 2px solid rgb(237, 242, 244); */
+    height: 150px;
+    width: 150px;
     text-align: center;
-    width: 60%;
-    border: 7px solid black;
-    margin: auto;
-    background-color: rgb(175, 214, 214);
-    
- }
- 
- span.container {
-    display: inline-flex;
- }
- .ingredients,
- .instructions { 
-   display:inline-block;
-   text-align: left; 
-   width: 50%;
-   height: auto;
- } 
- 
-.container ul,
-.container ol, 
-.notes {
+    padding: 5px;
+}
+img {
+    border: 2px solid #005b4d;
+    height: 100px;
+    width: 100px;
+}
+.main {
+    /* border: 2px solid rgb(15, 166, 226); */
+    background-color: #c0a258;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;  
+    width: 50%;  
+}
+.description {
+    /* border: 2px solid rgb(22, 176, 236); */
+    background-color: #c0a258;
+    display:flex;
+}
+.recipe-intro{
+    /* border: 3px solid black ; */
+    text-align: center;
+    background-color: #c0a258;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+}
+.actual-recipe {
+    /* border: 3px solid black ; */
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #c0a258;
+}
+
+.instructions,
+.ingredients {
+    border: 3px solid black ;
+    padding: 4px;
+    margin: 5px;
     list-style-position: inside;
-    border: 1px solid rgb(7, 0, 8);
-    background-color: antiquewhite;
-    padding: 5px 10px;
-    margin: 1% 4%;
-    
+    background-color: #ffefca;
+
 }
-.container li{
-    margin-bottom: 3px;
+.instructions {
+    width:70%;
 }
-h2 {
-    text-align: center;
-        
- }
+.ingredients {
+    width: 25%;
+}
+li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+p {
+    margin-top: 5px;
+}
